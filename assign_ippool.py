@@ -4,7 +4,7 @@
 #                          weihanghank@gmail.com                                  #
 ###################################################################################
 """
-Set all pods in a deployment to addresses in a specific IP pool
+Set all pods in a deployment to IP addresses in a specific IP pool
 """
 
 from my_py.configbyssh import *

@@ -4,7 +4,7 @@
 #                          weihanghank@gmail.com                                  #
 ###################################################################################
 """
-Push any command through SSH, and get response
+Delete the IP Pool with Calico IPAM
 """
 
 from my_py.configbyssh import *

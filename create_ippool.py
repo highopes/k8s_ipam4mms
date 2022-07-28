@@ -4,7 +4,7 @@
 #                          weihanghank@gmail.com                                  #
 ###################################################################################
 """
-Push any command through SSH, and get response
+Create the IP Pool with Calico IPAM
 """
 
 from my_py.configbyssh import *
