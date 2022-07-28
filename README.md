@@ -19,7 +19,7 @@ import paramiko
 from io import StringIO
 import json
 
-HOST_INFO = {"host": "10.75.53.43", "port": "22", "user": "root", "pass": "cisco123"}
+HOST_INFO = {"host": "10.1.1.1", "port": "22", "user": "root", "pass": "xxxxx"}
 
 
 def configbyssh(host, cmd):
