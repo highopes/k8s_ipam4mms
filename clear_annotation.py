@@ -10,11 +10,11 @@ Clear the annotations that were previously added because of associating IP Pool
 from my_py.configbyssh import *
 import json
 
-HOST_INFO = {"host": "10.75.53.43", "port": "22", "user": "root", "pass": "cisco123"}
+# HOST_INFO import from configbyssh module
 
-NAMESPACE = "default"
-DEPLOYMENT = "myweb"
-IPPOOL = "ip250"
+NAMESPACE = "default"  # name of k8s namespace
+DEPLOYMENT = "myweb"   # name of k8s deployment
+IPPOOL = "ip250"       # name of calico ipam IP Pool
 CMD = '''
 kubectl patch deployment {} -n {} --type=json -p='[{{"op":"remove","path":"/spec/template/metadata/annotations/cni.projectcalico.org~1ipv4pools"}}]'
 '''.format(DEPLOYMENT, NAMESPACE)

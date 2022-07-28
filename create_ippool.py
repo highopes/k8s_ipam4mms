@@ -10,9 +10,9 @@ Create the IP Pool with Calico IPAM
 from my_py.configbyssh import *
 import json
 
-HOST_INFO = {"host": "10.75.53.43", "port": "22", "user": "root", "pass": "cisco123"}
-SUBNET = "10.244.252.0/24"
-NAME = "ip252"
+# HOST_INFO import from configbyssh module
+SUBNET = "10.244.252.0/24"    # subnet of the new calico ipam IP Pool, currently only support one subnet
+NAME = "ip252"                # name of the new calico ipam IP Pool
 CMD = '''
 cat <<EOF | calicoctl apply -f -
 apiVersion: projectcalico.org/v3
